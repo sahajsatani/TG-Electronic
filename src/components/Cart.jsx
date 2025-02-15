@@ -42,7 +42,8 @@ const Cart = ({ cart, setCart }) => {
                       <span className="product-price" style={{ fontSize: '1.5rem', color: 'black' }}>
                       ${product.price} 
                       </span>
-                      <button onClick={() => handleRemove(product.id)} style={{ marginLeft: '100px'}} className="btn btn-danger">Remove</button>
+                      <button onClick={() => handleRemove(product.id)} style={{ marginLeft: '100px'}} 
+                      id={"removebtn"+product.id} className="btn btn-danger">Remove</button>
                     </div>
                   </div>
                 </div>
