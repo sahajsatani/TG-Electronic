@@ -85,19 +85,17 @@ const Navbar = ({ setData, cart }) => {
             />
           </form>
           <div className="cart">
-            {/* <Link to={"/cart"}> */}
-            <button
-              href="/cart"
+            <Link
+              to={"/cart"}
               id="cartbtn"
               className="btn btn-primary position-relative"
             >
               <BsFillCartCheckFill style={{ fontSize: "1.5rem" }} />
-              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cursor-pointer-none">
                 {cart.length}
                 <span className="visually-hidden">unread messages</span>
               </span>
-            </button>
-            {/* </Link> */}
+            </Link>
           </div>
         </div>
 
