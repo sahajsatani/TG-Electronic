@@ -132,6 +132,7 @@ const Product = ({ items,cart, setCart }) => {
                     </span>
                     {cart.some(cartItem => cartItem.id === product.id) ? (
                       <button
+                        id = {"remove"+product.id}
                         onClick={() => handleRemoveFromCart(product)}
                         className="btn btn-danger"
                         style={{
@@ -145,6 +146,7 @@ const Product = ({ items,cart, setCart }) => {
                       </button>
                     ) : (
                       <button
+                        id = {"addtocart"+product.id}
                         onClick={() => handleAddToCart(product)}
                         className="btn btn-warning"
                         style={{
